@@ -33,23 +33,23 @@
 <body class="bg-gray-100 text-gray-800">
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://api.whatsapp.com/send?phone=5551998188151&text=Olá! Visitei o site da VSS Transportes e gostaria de mais informações." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110">
+    <a href="https://api.whatsapp.com/send?phone=5551998188151&text=Olá! Visitei o site da VSS Transportes e gostaria de mais informações." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110 animate-bounce">
         <i class="fab fa-whatsapp fa-2x"></i>
     </a>
 
     <!-- Header -->
-    <header class="bg-white shadow-md sticky top-0 z-40">
+    <header class="bg-vss-blue shadow-md sticky top-0 z-40">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="flex items-center space-x-3">
                 <!-- LOGO - Atualize a URL com seu repositório do GitHub -->
-                <img src="https://raw.githubusercontent.com/SEU-USUARIO/SEU-REPOSITORIO/main/imagens/logo-vss.png" alt="Logo VSS Transportes" class="h-12">
+                <img src="./images/logo-vss.jpg" alt="Logo VSS Transportes" class="h-16">
             </a>
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#comofunciona" class="text-gray-600 hover:text-vss-blue transition font-medium">Como Funciona</a>
-                <a href="#servicos" class="text-gray-600 hover:text-vss-blue transition font-medium">Serviços</a>
-                <a href="#faq" class="text-gray-600 hover:text-vss-blue transition font-medium">FAQ</a>
-                <a href="#orcamento" class="bg-vss-blue text-white px-5 py-2 rounded-md hover:bg-vss-blue-dark transition font-bold">
-                    Pedir Orçamento
+                <a href="#comofunciona" class="text-white hover:text-vss-yellow transition font-medium">Como Funciona</a>
+                <a href="#servicos" class="text-white hover:text-vss-yellow transition font-medium">Serviços</a>
+                <a href="#faq" class="text-white hover:text-vss-yellow transition font-medium">FAQ</a>
+                <a href="https://api.whatsapp.com/send?phone=5551998188151&text=Olá! Visitei o site da VSS Transportes e gostaria de mais informações." target="_blank" class="bg-vss-yellow text-gray-900 px-5 py-2 rounded-md hover:bg-vss-yellow-dark transition font-bold">
+                    Fale Conosco
                 </a>
             </div>
         </nav>
@@ -57,13 +57,13 @@
 
     <!-- Hero Section -->
     <!-- IMAGEM DE FUNDO - Atualize a URL com seu repositório do GitHub -->
-    <section class="relative bg-gray-800 text-white py-20 md:py-28" style="background-image: url('https://raw.githubusercontent.com/SEU-USUARIO/SEU-REPOSITORIO/main/imagens/background.jpg'); background-size: cover; background-position: center;">
+    <section class="relative bg-gray-800 text-white py-20 md:py-28" style="background-image: url('./images/background-frete.jpg'); background-size: cover; background-position: center;">
         <div class="absolute inset-0 bg-black opacity-70"></div>
         <div class="container mx-auto px-6 relative z-10 text-center">
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Frete Rápido e Seguro do Litoral Norte RS para todo o Brasil</h1>
             <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10">Precisando de uma transportadora em Osório e região? Coletamos sua carga e conectamos você a qualquer destino. Soluções para empresas e pessoas físicas.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://api.whatsapp.com/send?phone=5551998188151&text=Olá! Gostaria de uma cotação rápida de frete." target="_blank" class="bg-vss-yellow text-gray-900 font-bold py-4 px-8 rounded-lg text-lg hover:bg-vss-yellow-dark transition-all transform hover:scale-105 flex items-center justify-center gap-2">
+                <a href="https://api.whatsapp.com/send?phone=5551998188151&text=Olá! Gostaria de uma cotação rápida de frete." target="_blank" class="bg-green-500 text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-green-600 transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg shadow-green-500/50">
                     <i class="fab fa-whatsapp"></i>
                     Cotação Rápida via WhatsApp
                 </a>
@@ -103,8 +103,9 @@
     </section>
 
     <!-- Services Section -->
-    <section id="servicos" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6 text-center">
+    <section id="servicos" class="relative py-20 bg-gray-100 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center z-0 opacity-10" style="background-image: url('./images/caixas-logistica.jpg');"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
             <h2 class="text-3xl md:text-4xl font-bold mb-12">Soluções de Transporte para Todos</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-lg shadow-md">
@@ -126,38 +127,7 @@
         </div>
     </section>
 
-    <!-- Detailed Quote Section -->
-    <section id="orcamento" class="py-20 bg-vss-blue text-white">
-        <div class="container mx-auto px-6">
-             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="text-center md:text-left">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Precisa de um Orçamento Detalhado?</h2>
-                    <p class="text-gray-300 text-lg">Para cargas específicas ou necessidades recorrentes, preencha o formulário ao lado. Nossa equipe analisará sua demanda para oferecer a melhor proposta.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-2xl text-gray-800">
-                    <!-- The form now has an ID and no 'action' attribute -->
-                    <form id="contact-form">
-                        <div class="mb-4">
-                            <label for="name-form" class="sr-only">Nome</label>
-                            <input type="text" id="name-form" name="name" placeholder="Seu nome completo" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 ring-vss-yellow" required>
-                        </div>
-                        <div class="mb-4">
-                            <label for="contact-form-field" class="sr-only">Email ou Telefone</label>
-                            <input type="text" id="contact-form-field" name="contact" placeholder="Seu melhor email ou telefone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 ring-vss-yellow" required>
-                        </div>
-                        <div class="mb-6">
-                            <label for="message-form" class="sr-only">Mensagem</label>
-                            <textarea id="message-form" name="message" rows="4" placeholder="Descreva sua necessidade (tipo de carga, origem, destino, etc.)" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 ring-vss-yellow" required></textarea>
-                        </div>
-                        <button type="submit" id="submit-button" class="w-full bg-vss-yellow text-gray-900 font-bold py-4 px-4 rounded-lg hover:bg-vss-yellow-dark transition-all text-lg">
-                            ENVIAR SOLICITAÇÃO
-                        </button>
-                        <p id="form-status" class="text-center mt-4"></p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- FAQ Section -->
     <section id="faq" class="py-20 bg-white">
@@ -207,49 +177,16 @@
                 <p>&copy; 2024 VSS Transportes. Todos os direitos reservados.</p>
                 <div class="flex justify-center items-center mt-2">
                     <p class="mr-2">Desenvolvido por</p>
-                    <a href="#">
+                    <a href="https://www.instagram.com/somos.lidera" target="_blank">
                         <!-- LOGO LIDERA - Atualize a URL com seu repositório do GitHub -->
-                        <img src="https://raw.githubusercontent.com/SEU-USUARIO/SEU-REPOSITORIO/main/imagens/logo-lidera.png" alt="Logo Lidera Soluções de Negócios" class="h-8">
+                        <img src="./images/lidera-logo.png" alt="Logo Lidera Soluções de Negócios" class="h-8">
                     </a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript for Form Submission -->
-    <script>
-        const form = document.getElementById('contact-form');
-        const submitButton = document.getElementById('submit-button');
-        const formStatus = document.getElementById('form-status');
-
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // IMPORTANT: Replace this URL with the one you got from Google Apps Script
-            const scriptURL = 'COLE_A_URL_DO_SEU_SCRIPT_AQUI';
-            const formData = new FormData(form);
-
-            submitButton.disabled = true;
-            submitButton.innerHTML = 'Enviando...';
-
-            fetch(scriptURL, { method: 'POST', body: formData })
-                .then(response => {
-                    console.log('Success!', response);
-                    formStatus.textContent = 'Mensagem enviada com sucesso! Agradecemos o contato.';
-                    formStatus.style.color = 'green';
-                    form.reset();
-                })
-                .catch(error => {
-                    console.error('Error!', error.message);
-                    formStatus.textContent = 'Ocorreu um erro. Tente novamente mais tarde.';
-                    formStatus.style.color = 'red';
-                })
-                .finally(() => {
-                    submitButton.disabled = false;
-                    submitButton.innerHTML = 'ENVIAR SOLICITAÇÃO';
-                });
-        });
-    </script>
+    
 
 </body>
 </html>
